@@ -1,0 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugas;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author revin
+ */
+public class tugasrandom1 {
+    public static void main(String[] args) {
+         Scanner input = new Scanner(System.in);
+         
+         int hasil;
+         
+         System.out.println("Masukan angka 5 angka random dari 1-100");
+         
+         System.out.println("Masukan angka pertama :");
+         int inputan1 = input.nextInt();
+         
+         System.out.println("Masukan angka kedua :");
+         int inputan2 = input.nextInt();
+         
+         System.out.println("Masukan angka ketiga :");
+         int inputan3 = input.nextInt();
+         
+         System.out.println("Masukan angka keempat :");
+         int inputan4 = input.nextInt();
+         
+         System.out.println("Masukan angka kelima :");
+         int inputan5 = input.nextInt();
+         
+         
+         hasil =(inputan1+inputan2+inputan3+inputan4+inputan5);
+         
+         System.out.println("");
+         
+         
+         //hasil nilai penjumlahan
+         if (hasil <= 60) {
+             System.out.println(hasil +" nilai anda KURANG");
+        }
+         else if (hasil <= 70) {
+             System.out.println(hasil +" nilai anda CUKUP");
+            
+        }
+         else if (hasil <=80) {
+             System.out.println(hasil +"nilai anda BAIK");
+            
+        }
+         else if (hasil >=80) {
+             System.out.println(hasil +"nilai anda LUAR BINASA");
+            
+        }
+    }
+    
+}
